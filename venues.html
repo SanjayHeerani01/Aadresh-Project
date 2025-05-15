@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Venues - Sindh Shaadi Palace</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/venues.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header-fixed" id="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Sindh Shaadi</span>
+                        <span class="logo-accent">Palace</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="venues.html" class="nav-link active">Venues</a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="booking.html" class="nav-link">Book Now</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image: url('https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        <div class="container">
+            <div class="banner-content">
+                <h1 class="banner-title">Our Magnificent Venues</h1>
+                <p class="banner-subtitle">Discover the perfect space for your dream wedding</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">Venues</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venues Intro -->
+    <section class="venues-intro section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perfect <span>Celebrations</span> Begin Here</h2>
+                <p class="section-subtitle">Explore our culturally-rich wedding venues designed for your special moments</p>
+            </div>
+            <div class="intro-content">
+                <p>At Sindh Shaadi Palace, we offer a variety of stunning venues that blend traditional Sindhi aesthetics with modern amenities. Each of our spaces is uniquely designed to accommodate different types of celebrations, guest counts, and personal preferences.</p>
+                <p>Whether you're planning an intimate nikah ceremony, a vibrant mehndi celebration, or a grand wedding reception, our venues provide the perfect backdrop for your special day.</p>
+            </div>
+            <div class="venue-filters">
+                <button class="filter-btn active" data-filter="all">All Venues</button>
+                <button class="filter-btn" data-filter="indoor">Indoor</button>
+                <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+                <button class="filter-btn" data-filter="large">Large (300+)</button>
+                <button class="filter-btn" data-filter="medium">Medium (100-300)</button>
+                <button class="filter-btn" data-filter="small">Small (Up to 100)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venues Listing -->
+    <section class="venues-listing section-padding bg-light" id="venues-listing">
+        <div class="container">
+            <!-- Grand Thar Hall -->
+            <div class="venue-item" id="thar-hall" data-type="indoor large">
+                <div class="venue-details">
+                    <div class="venue-images">
+                        <div class="venue-image-main">
+                            <img src="https://images.pexels.com/photos/2291462/pexels-photo-2291462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Grand Thar Hall">
+                        </div>
+                        <div class="venue-image-grid">
+                            <img src="https://images.pexels.com/photos/1616113/pexels-photo-1616113.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Grand Thar Hall Decor">
+                            <img src="https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Grand Thar Hall Stage">
+                            <img src="https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Grand Thar Hall Dining">
+                        </div>
+                    </div>
+                    <div class="venue-info">
+                        <h2 class="venue-title">Grand Thar Hall</h2>
+                        <div class="venue-meta">
+                            <span><i class="fas fa-users"></i> Capacity: 300-500 guests</span>
+                            <span><i class="fas fa-vector-square"></i> Size: 10,000 sq ft</span>
+                            <span><i class="fas fa-building"></i> Type: Indoor</span>
+                        </div>
+                        <div class="venue-description">
+                            <p>Our largest and most luxurious venue, the Grand Thar Hall is inspired by the majestic Thar Desert of Sindh. This opulent space features high ceilings adorned with intricate chandeliers, traditional Sindhi motifs, and state-of-the-art amenities.</p>
+                            <p>The hall can accommodate up to 500 guests in comfort, making it perfect for grand wedding celebrations, valimas, and large receptions. The spacious dance floor, elevated stage, and premium sound system create the perfect environment for memorable celebrations.</p>
+                        </div>
+                        <div class="venue-features">
+                            <h3>Features & Amenities</h3>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Luxurious interiors with Sindhi cultural motifs</li>
+                                <li><i class="fas fa-check"></i> Advanced climate control system</li>
+                                <li><i class="fas fa-check"></i> State-of-the-art audiovisual equipment</li>
+                                <li><i class="fas fa-check"></i> Spacious dance floor and elevated stage</li>
+                                <li><i class="fas fa-check"></i> Dedicated bridal suite</li>
+                                <li><i class="fas fa-check"></i> Premium catering options</li>
+                                <li><i class="fas fa-check"></i> Valet parking service</li>
+                                <li><i class="fas fa-check"></i> Professional event management team</li>
+                            </ul>
+                        </div>
+                        <div class="venue-pricing">
+                            <h3>Pricing</h3>
+                            <div class="pricing-options">
+                                <div class="price-card">
+                                    <h4>Basic Package</h4>
+                                    <div class="price">PKR 350,000</div>
+                                    <ul>
+                                        <li>Venue rental for 8 hours</li>
+                                        <li>Basic traditional décor</li>
+                                        <li>Sound system</li>
+                                        <li>Lighting setup</li>
+                                        <li>Standard tables and chairs</li>
+                                    </ul>
+                                </div>
+                                <div class="price-card featured">
+                                    <h4>Premium Package</h4>
+                                    <div class="price">PKR 550,000</div>
+                                    <ul>
+                                        <li>Venue rental for 12 hours</li>
+                                        <li>Luxury Sindhi-themed décor</li>
+                                        <li>Advanced sound & lighting</li>
+                                        <li>Premium furniture</li>
+                                        <li>Bridal suite access</li>
+                                        <li>Valet parking</li>
+                                        <li>AI event coordinator</li>
+                                    </ul>
+                                </div>
+                                <div class="price-card">
+                                    <h4>Elite Package</h4>
+                                    <div class="price">PKR 750,000</div>
+                                    <ul>
+                                        <li>Full-day venue access</li>
+                                        <li>Custom luxury décor</li>
+                                        <li>Premium catering for 300</li>
+                                        <li>Live music arrangement</li>
+                                        <li>Photography & videography</li>
+                                        <li>Premium bridal suite</li>
+                                        <li>Full AI planning assistant</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="venue-cta">
+                            <a href="booking.html?venue=thar-hall" class="btn btn-primary">Book This Venue</a>
+                            <a href="#" class="btn btn-outline venue-tour-btn" data-venue="thar-hall">Virtual Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sindhu Garden -->
+            <div class="venue-item" id="sindhu-garden" data-type="outdoor medium">
+                <div class="venue-details">
+                    <div class="venue-images">
+                        <div class="venue-image-main">
+                            <img src="https://images.pexels.com/photos/1114425/pexels-photo-1114425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sindhu Garden">
+                        </div>
+                        <div class="venue-image-grid">
+                            <img src="https://images.pexels.com/photos/2407068/pexels-photo-2407068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sindhu Garden Setup">
+                            <img src="https://images.pexels.com/photos/265920/pexels-photo-265920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sindhu Garden Night">
+                            <img src="https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sindhu Garden Decor">
+                        </div>
+                    </div>
+                    <div class="venue-info">
+                        <h2 class="venue-title">Sindhu Garden</h2>
+                        <div class="venue-meta">
+                            <span><i class="fas fa-users"></i> Capacity: 150-300 guests</span>
+                            <span><i class="fas fa-vector-square"></i> Size: 15,000 sq ft</span>
+                            <span><i class="fas fa-tree"></i> Type: Outdoor</span>
+                        </div>
+                        <div class="venue-description">
+                            <p>Our beautiful open-air celebration space, Sindhu Garden is named after the mighty Sindhu (Indus) River. This lush green venue is adorned with local flora, water features, and elegant pathways, creating a serene environment for your special day.</p>
+                            <p>Perfect for daytime events or evening celebrations under the stars, this venue can accommodate up to 300 guests. The garden is particularly popular for mehndi ceremonies, nikah events, and intimate wedding receptions during the pleasant weather seasons.</p>
+                        </div>
+                        <div class="venue-features">
+                            <h3>Features & Amenities</h3>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Lush landscaped gardens with Sindhi plants</li>
+                                <li><i class="fas fa-check"></i> Elegant pavilion and seating areas</li>
+                                <li><i class="fas fa-check"></i> Beautiful water features</li>
+                                <li><i class="fas fa-check"></i> Customizable lighting arrangements</li>
+                                <li><i class="fas fa-check"></i> Backup facilities in case of weather changes</li>
+                                <li><i class="fas fa-check"></i> Natural photo backdrops</li>
+                                <li><i class="fas fa-check"></i> Open catering area</li>
+                                <li><i class="fas fa-check"></i> Dedicated event coordinator</li>
+                            </ul>
+                        </div>
+                        <div class="venue-pricing">
+                            <h3>Pricing</h3>
+                            <div class="pricing-options">
+                                <div class="price-card">
+                                    <h4>Daytime Package</h4>
+                                    <div class="price">PKR 250,000</div>
+                                    <ul>
+                                        <li>Venue rental (10am-4pm)</li>
+                                        <li>Basic floral decorations</li>
+                                        <li>Standard seating arrangement</li>
+                                        <li>Sound system setup</li>
+                                        <li>Cooling arrangements (seasonal)</li>
+                                    </ul>
+                                </div>
+                                <div class="price-card featured">
+                                    <h4>Evening Package</h4>
+                                    <div class="price">PKR 350,000</div>
+                                    <ul>
+                                        <li>Venue rental (5pm-11pm)</li>
+                                        <li>Enhanced floral decorations</li>
+                                        <li>Premium lighting setup</li>
+                                        <li>Elegant seating arrangement</li>
+                                        <li>Sound system</li>
+                                        <li>Basic stage setup</li>
+                                        <li>Event coordinator</li>
+                                    </ul>
+                                </div>
+                                <div class="price-card">
+                                    <h4>Full Day Package</h4>
+                                    <div class="price">PKR 500,000</div>
+                                    <ul>
+                                        <li>Full-day venue access</li>
+                                        <li>Luxury decorations</li>
+                                        <li>Catering for 200 guests</li>
+                                        <li>Premium lighting & sound</li>
+                                        <li>Custom stage design</li>
+                                        <li>Dedicated preparation areas</li>
+                                        <li>AI planning assistance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="venue-cta">
+                            <a href="booking.html?venue=sindhu-garden" class="btn btn-primary">Book This Venue</a>
+                            <a href="#" class="btn btn-outline venue-tour-btn" data-venue="sindhu-garden">Virtual Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ajrak Banquet -->
+            <div class="venue-item" id="ajrak-banquet" data-type="indoor medium">
+                <div class="venue-details">
+                    <div class="venue-images">
+                        <div class="venue-image-main">
+                            <img src="https://images.pexels.com/photos/1045541/pexels-photo-1045541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ajrak Banquet">
+                        </div>
+                        <div class="venue-image-grid">
+                            <img src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ajrak Banquet Decor">
+                            <img src="https://images.pexels.com/photos/3316918/pexels-photo-3316918.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ajrak Banquet Setup">
+                            <img src="https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ajrak Banquet Lighting">
+                        </div>
+                    </div>
+                    <div class="venue-info">
+                        <h2 class="venue-title">Ajrak Banquet</h2>
+                        <div class="venue-meta">
+                            <span><i class="fas fa-users"></i> Capacity: 100-200 guests</span>
+                            <span><i class="fas fa-vector-square"></i> Size: 6,000 sq ft</span>
+                            <span><i class="fas fa-building"></i> Type: Indoor</span>
+                        </div>
+                        <div class="venue-description">
+                            <p>Named after the traditional Sindhi block-printed textile, our Ajrak Banquet hall features beautiful patterns and designs inspired by this cultural art form. This intimate yet elegant space is perfect for medium-sized gatherings of up to 200 guests.</p>
+                            <p>The venue features warm lighting, comfortable seating, and excellent acoustics, making it ideal for engagement ceremonies, intimate weddings, and smaller receptions. The hall's design seamlessly blends traditional Sindhi elements with modern comfort.</p>
+                        </div>
+                        <div class="venue-features">
+                            <h3>Features & Amenities</h3>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Interior designed with authentic Ajrak patterns</li>
+                                <li><i class="fas fa-check"></i> Perfect climate control system</li>
+                                <li><i class="fas fa-check"></i> Excellent acoustics and sound system</li>
+                                <li><i class="fas fa-check"></i> Customizable lighting options</li>
+                                <li><i class="fas fa-check"></i> Elegant stage and seating</li>
+                                <li><i class="fas fa-check"></i> Dedicated serving area</li>
+                                <li><i class="fas fa-check"></i> Convenient parking</li>
+                                <li><i class="fas fa-check"></i> High-speed Wi-Fi</li>
+                            </ul>
+                        </div>
+                        <div class="venue-pricing">
+                            <h3>Pricing</h3>
+                            <div class="pricing-options">
+                                <div class="price-card">
+                                    <h4>Standard Package</h4>
+                                    <div class="price">PKR 200,000</div>
+                                    <ul>
+                                        <li>Venue rental for 6 hours</li>
+                                        <li>Basic traditional décor</li>
+                                        <li>Standard sound system</li>
+                                        <li>Basic lighting</li>
+                                        <li>Standard seating</li>
+                                    </ul>
+                                </div>
+                                <div class="price-card featured">
+                                    <h4>Deluxe Package</h4>
+                                    <div class="price">PKR 300,000</div>
+                                    <ul>
+                                        <li>Venue rental for 8 hours</li>
+                                        <li>Enhanced Ajrak-themed décor</li>
+                                        <li>Premium sound system</li>
+                                        <li>Advanced lighting options</li>
+                                        <li>Elegant seating arrangement</li>
+                                        <li>Basic catering setup</li>
+                                        <li>Event coordinator</li>
+                                    </ul>
+                                </div>
+                                <div class="price-card">
+                                    <h4>Premium Package</h4>
+                                    <div class="price">PKR 400,000</div>
+                                    <ul>
+                                        <li>Full-day venue access</li>
+                                        <li>Luxury Ajrak-inspired décor</li>
+                                        <li>Catering for 150 guests</li>
+                                        <li>Premium audiovisual setup</li>
+                                        <li>Custom stage design</li>
+                                        <li>Dedicated preparation area</li>
+                                        <li>AI planning assistant</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="venue-cta">
+                            <a href="booking.html?venue=ajrak-banquet" class="btn btn-primary">Book This Venue</a>
+                            <a href="#" class="btn btn-outline venue-tour-btn" data-venue="ajrak-banquet">Virtual Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ralli Courtyard -->
+            <div class="venue-item" id="ralli-courtyard" data-type="outdoor small">
+                <div class="venue-details">
+                    <div class="venue-images">
+                        <div class="venue-image-main">
+                            <img src="https://images.pexels.com/photos/632520/pexels-photo-632520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ralli Courtyard">
+                        </div>
+                        <div class="venue-image-grid">
+                            <img src="https://images.pexels.com/photos/1120162/pexels-photo-1120162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ralli Courtyard Setup">
+                            <img src="https://images.pexels.com/photos/3462564/pexels-photo-3462564.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ralli Courtyard Night">
+                            <img src="https://images.pexels.com/photos/2507016/pexels-photo-2507016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ralli Courtyard Decor">
+                        </div>
+                    </div>
+                    <div class="venue-info">
+                        <h2 class="venue-title">Ralli Courtyard</h2>
+                        <div class="venue-meta">
+                            <span><i class="fas fa-users"></i> Capacity: 50-100 guests</span>
+                            <span><i class="fas fa-vector-square"></i> Size: 3,500 sq ft</span>
+                            <span><i class="fas fa-home"></i> Type: Semi-outdoor</span>
+                        </div>
+                        <div class="venue-description">
+                            <p>Named after the colorful Sindhi patchwork textiles, the Ralli Courtyard is our most intimate venue. This charming space combines an open courtyard with covered areas, reflecting the traditional haveli-style architecture of Sindh.</p>
+                            <p>Perfect for small, intimate gatherings of up to 100 guests, this venue is ideal for nikah ceremonies, small family gatherings, and pre-wedding events. The courtyard features traditional seating arrangements, handcrafted décor, and a warm, inviting atmosphere.</p>
+                        </div>
+                        <div class="venue-features">
+                            <h3>Features & Amenities</h3>
+                            <ul class="features-list">
+                                <li><i class="fas fa-check"></i> Traditional courtyard design with haveli-style elements</li>
+                                <li><i class="fas fa-check"></i> Colorful Ralli-inspired decorations</li>
+                                <li><i class="fas fa-check"></i> Intimate seating arrangements</li>
+                                <li><i class="fas fa-check"></i> Ambient lighting with traditional lanterns</li>
+                                <li><i class="fas fa-check"></i> Small stage area</li>
+                                <li><i class="fas fa-check"></i> Weather protection options</li>
+                                <li><i class="fas fa-check"></i> Sound system</li>
+                                <li><i class="fas fa-check"></i> Dedicated event host</li>
+                            </ul>
+                        </div>
+                        <div class="venue-pricing">
+                            <h3>Pricing</h3>
+                            <div class="pricing-options">
+                                <div class="price-card">
+                                    <h4>Basic Package</h4>
+                                    <div class="price">PKR 150,000</div>
+                                    <ul>
+                                        <li>Venue rental for 6 hours</li>
+                                        <li>Simple traditional décor</li>
+                                        <li>Basic sound setup</li>
+                                        <li>Standard lighting</li>
+                                        <li>Traditional floor seating</li>
+                                    </ul>
+                                </div>
+                                <div class="price-card featured">
+                                    <h4>Deluxe Package</h4>
+                                    <div class="price">PKR 200,000</div>
+                                    <ul>
+                                        <li>Venue rental for
+                                        <li>Venue rental for 8 hours</li>
+                                        <li>Enhanced Ralli-themed décor</li>
+                                        <li>Premium sound system</li>
+                                        <li>Upgraded lighting with lanterns</li>
+                                        <li>Mix of floor and table seating</li>
+                                        <li>Simple catering setup</li>
+                                        <li>Event host</li>
+                                    </ul>
+                                </div>
+                                <div class="price-card">
+                                    <h4>Premium Package</h4>
+                                    <div class="price">PKR 250,000</div>
+                                    <ul>
+                                        <li>Full-day venue access</li>
+                                        <li>Luxury traditional décor</li>
+                                        <li>Catering for 75 guests</li>
+                                        <li>Premium audiovisual setup</li>
+                                        <li>Custom seating arrangements</li>
+                                        <li>Traditional music options</li>
+                                        <li>AI planning assistance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="venue-cta">
+                            <a href="booking.html?venue=ralli-courtyard" class="btn btn-primary">Book This Venue</a>
+                            <a href="#" class="btn btn-outline venue-tour-btn" data-venue="ralli-courtyard">Virtual Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Call to Action -->
+    <section class="venues-cta section-padding bg-overlay" style="background-image: url('https://images.pexels.com/photos/931887/pexels-photo-931887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Found Your Perfect Venue?</h2>
+                <p>Book now to secure your preferred date before it's taken</p>
+                <div class="cta-buttons">
+                    <a href="booking.html" class="btn btn-primary">Book a Venue</a>
+                    <a href="contact.html" class="btn btn-outline light">Contact for Custom Requirements</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="venues-faq section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently <span>Asked Questions</span></h2>
+                <p class="section-subtitle">Get answers to common queries about our venues</p>
+            </div>
+            <div class="faq-wrapper">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How far in advance should I book my venue?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 6-8 months in advance for peak wedding season (October-March). For off-season dates, 3-4 months advance booking is typically sufficient, though popular dates can book up quickly year-round.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are outside vendors allowed?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we allow outside vendors for specific services. However, we do have preferred vendor lists and some venue packages include certain services. Additional fees may apply for outside catering. Please discuss your needs with our event coordinator.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens in case of bad weather for outdoor venues?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For all our outdoor venues, we offer backup indoor options in case of inclement weather. This contingency plan is discussed during the booking process, and we monitor weather forecasts closely as your event approaches to make timely decisions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can we customize the venue decorations?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! While our venues showcase traditional Sindhi décor elements, we welcome customizations to match your specific theme or preferences. Our event designers can work with you to create a personalized ambiance that reflects your vision while honoring cultural elements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the payment structure for booking a venue?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our standard payment structure requires a 30% deposit to secure your date, with an additional 40% due three months before the event and the remaining balance due one month prior to your event. We accept various payment methods including credit/debit cards, bank transfers, and cash payments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Modal -->
+    <div class="modal" id="virtual-tour-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Virtual Tour</h2>
+            <div class="virtual-tour-container">
+                <div class="tour-loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading virtual tour...</p>
+                </div>
+                <div class="tour-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant" id="ai-assistant">
+        <button class="ai-toggle" id="ai-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="ai-chat-container" id="ai-chat-container">
+            <div class="ai-chat-header">
+                <h3>Wedding Planner AI</h3>
+                <button class="ai-close" id="ai-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="ai-chat-messages" id="ai-chat-messages">
+                <div class="ai-message">
+                    <div class="ai-message-content">
+                        <p>Hello! I'm your wedding planning assistant. How can I help you choose the perfect venue at Sindh Shaadi Palace?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-chat-input">
+                <input type="text" id="ai-input" placeholder="Ask me anything about our venues...">
+                <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">Sindh Shaadi</span>
+                        <span class="logo-accent">Palace</span>
+                    </div>
+                    <p class="footer-description">Creating magical wedding experiences with a perfect blend of Sindhi culture and modern luxury.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="venues.html">Venues</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#catering">Catering</a></li>
+                        <li><a href="services.html#decoration">Decoration</a></li>
+                        <li><a href="services.html#photography">Photography</a></li>
+                        <li><a href="services.html#entertainment">Entertainment</a></li>
+                        <li><a href="services.html#planning">AI Planning</a></li>
+                        <li><a href="services.html#transportation">Transportation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Cultural Road, Hyderabad, Sindh, Pakistan</li>
+                        <li><i class="fas fa-phone"></i> +92 22 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@sindhshaadi.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Sun: 9:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Sindh Shaadi Palace. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="admin/login.html">Admin Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/venues.js"></script>
+    <script src="js/ai-assistant.js"></script>
+</body>
+</html>

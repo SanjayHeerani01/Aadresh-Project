@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Event - Sindh Shaadi Palace</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header header-fixed" id="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Sindh Shaadi</span>
+                        <span class="logo-accent">Palace</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="venues.html" class="nav-link">Venues</a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="booking.html" class="nav-link active">Book Now</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="booking.html" class="btn btn-primary">Book Now</a>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image: url('https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        <div class="container">
+            <div class="banner-content">
+                <h1 class="banner-title">Book Your Dream Wedding</h1>
+                <p class="banner-subtitle">Let our AI-powered system help you create the perfect celebration</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">Booking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Intro -->
+    <section class="booking-intro section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Begin Your <span>Wedding Journey</span></h2>
+                <p class="section-subtitle">Our smart booking system makes planning your special day effortless</p>
+            </div>
+            <div class="intro-content">
+                <p>At Sindh Shaadi Palace, we've simplified the booking process with our AI-powered system that helps you select the perfect venue, date, and services for your event. Our intelligent system will guide you through each step, providing recommendations based on your preferences and requirements.</p>
+                <p>Follow the steps below to reserve your venue and begin planning your dream celebration with us.</p>
+            </div>
+            <div class="booking-steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="step-number">1</span>
+                    </div>
+                    <h3>Select Event Date</h3>
+                    <p>Choose your preferred date and check availability across all our venues.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="step-number">2</span>
+                    </div>
+                    <h3>Choose Venue</h3>
+                    <p>Browse available venues for your selected date and find your perfect match.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-utensils"></i>
+                        <span class="step-number">3</span>
+                    </div>
+                    <h3>Add Services</h3>
+                    <p>Customize your event with additional services and packages.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                        <span class="step-number">4</span>
+                    </div>
+                    <h3>Confirm Booking</h3>
+                    <p>Complete your reservation with a deposit payment to secure your date.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section section-padding bg-light">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-sidebar">
+                    <div class="booking-progress">
+                        <div class="progress-step active" data-step="1">
+                            <span class="step-number">1</span>
+                            <span class="step-label">Event Details</span>
+                        </div>
+                        <div class="progress-step" data-step="2">
+                            <span class="step-number">2</span>
+                            <span class="step-label">Venue Selection</span>
+                        </div>
+                        <div class="progress-step" data-step="3">
+                            <span class="step-number">3</span>
+                            <span class="step-label">Services & Add-ons</span>
+                        </div>
+                        <div class="progress-step" data-step="4">
+                            <span class="step-number">4</span>
+                            <span class="step-label">Personal Details</span>
+                        </div>
+                        <div class="progress-step" data-step="5">
+                            <span class="step-number">5</span>
+                            <span class="step-label">Confirmation</span>
+                        </div>
+                    </div>
+                    <div class="booking-summary" id="booking-summary">
+                        <h3 class="summary-title">Booking Summary</h3>
+                        <div class="summary-content">
+                            <p class="summary-empty">Please complete the booking form to see your summary.</p>
+                            <div class="summary-details" style="display: none;">
+                                <div class="summary-item">
+                                    <span class="item-label">Event Date:</span>
+                                    <span class="item-value" id="summary-date">--</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="item-label">Event Type:</span>
+                                    <span class="item-value" id="summary-event-type">--</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="item-label">Guest Count:</span>
+                                    <span class="item-value" id="summary-guests">--</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="item-label">Venue:</span>
+                                    <span class="item-value" id="summary-venue">--</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="item-label">Package:</span>
+                                    <span class="item-value" id="summary-package">--</span>
+                                </div>
+                                <div class="summary-services">
+                                    <span class="item-label">Additional Services:</span>
+                                    <ul id="summary-services-list">
+                                        <li>None selected</li>
+                                    </ul>
+                                </div>
+                                <div class="summary-item total">
+                                    <span class="item-label">Estimated Total:</span>
+                                    <span class="item-value" id="summary-total">PKR 0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ai-recommendation">
+                            <h4><i class="fas fa-robot"></i> AI Recommendations</h4>
+                            <p id="ai-recommendation-text">Complete the form to get personalized recommendations from our AI system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form-container">
+                    <form id="booking-form" class="booking-form">
+                        <!-- Step 1: Event Details -->
+                        <div class="booking-step active" id="booking-step-1">
+                            <h3 class="step-title">Event Details</h3>
+                            <div class="form-group">
+                                <label for="event-date">Event Date <span class="required">*</span></label>
+                                <input type="date" id="event-date" name="event-date" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="event-type">Event Type <span class="required">*</span></label>
+                                    <select id="event-type" name="event-type" required>
+                                        <option value="">Select Event Type</option>
+                                        <option value="wedding">Wedding Ceremony</option>
+                                        <option value="reception">Wedding Reception</option>
+                                        <option value="mehndi">Mehndi Ceremony</option>
+                                        <option value="baraat">Baraat</option>
+                                        <option value="nikah">Nikah Ceremony</option>
+                                        <option value="engagement">Engagement</option>
+                                        <option value="dholki">Dholki</option>
+                                        <option value="walima">Walima</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-guests">Number of Guests <span class="required">*</span></label>
+                                    <input type="number" id="event-guests" name="event-guests" min="50" max="500" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-time">Event Time <span class="required">*</span></label>
+                                <select id="event-time" name="event-time" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option value="morning">Morning (9:00 AM - 1:00 PM)</option>
+                                    <option value="afternoon">Afternoon (2:00 PM - 6:00 PM)</option>
+                                    <option value="evening">Evening (7:00 PM - 11:00 PM)</option>
+                                    <option value="full-day">Full Day (9:00 AM - 11:00 PM)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-budget">Approximate Budget (PKR)</label>
+                                <input type="range" id="event-budget" name="event-budget" min="100000" max="1000000" step="50000" value="350000">
+                                <div class="budget-display">
+                                    <span>PKR 100,000</span>
+                                    <span id="budget-value">PKR 350,000</span>
+                                    <span>PKR 1,000,000</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-notes">Special Requirements or Preferences</label>
+                                <textarea id="event-notes" name="event-notes" rows="3" placeholder="Tell us about any special requirements, cultural preferences, or specific needs for your event..."></textarea>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="btn btn-primary next-step" data-next="2">Continue to Venue Selection</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Venue Selection -->
+                        <div class="booking-step" id="booking-step-2">
+                            <h3 class="step-title">Choose Your Venue</h3>
+                            <div class="venues-availability">
+                                <div class="venue-option" data-venue="thar-hall" data-min-guests="300" data-max-guests="500">
+                                    <div class="venue-checkbox">
+                                        <input type="radio" id="venue-thar" name="venue" value="thar-hall">
+                                        <label for="venue-thar" class="radio-label"></label>
+                                    </div>
+                                    <div class="venue-preview">
+                                        <img src="https://images.pexels.com/photos/2291462/pexels-photo-2291462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Grand Thar Hall">
+                                    </div>
+                                    <div class="venue-details">
+                                        <h4>Grand Thar Hall</h4>
+                                        <p class="venue-capacity">300-500 Guests</p>
+                                        <p class="venue-description">Our largest and most luxurious venue with Sindhi desert-inspired decor.</p>
+                                        <a href="venues.html#thar-hall" class="venue-link" target="_blank">View Details</a>
+                                    </div>
+                                    <div class="venue-packages">
+                                        <select class="package-select" data-venue="thar-hall">
+                                            <option value="">Select Package</option>
+                                            <option value="basic" data-price="350000">Basic Package - PKR 350,000</option>
+                                            <option value="premium" data-price="550000">Premium Package - PKR 550,000</option>
+                                            <option value="elite" data-price="750000">Elite Package - PKR 750,000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="venue-option" data-venue="sindhu-garden" data-min-guests="150" data-max-guests="300">
+                                    <div class="venue-checkbox">
+                                        <input type="radio" id="venue-sindhu" name="venue" value="sindhu-garden">
+                                        <label for="venue-sindhu" class="radio-label"></label>
+                                    </div>
+                                    <div class="venue-preview">
+                                        <img src="https://images.pexels.com/photos/1114425/pexels-photo-1114425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sindhu Garden">
+                                    </div>
+                                    <div class="venue-details">
+                                        <h4>Sindhu Garden</h4>
+                                        <p class="venue-capacity">150-300 Guests</p>
+                                        <p class="venue-description">Beautiful open-air celebration space with lush greenery and water features.</p>
+                                        <a href="venues.html#sindhu-garden" class="venue-link" target="_blank">View Details</a>
+                                    </div>
+                                    <div class="venue-packages">
+                                        <select class="package-select" data-venue="sindhu-garden">
+                                            <option value="">Select Package</option>
+                                            <option value="daytime" data-price="250000">Daytime Package - PKR 250,000</option>
+                                            <option value="evening" data-price="350000">Evening Package - PKR 350,000</option>
+                                            <option value="full-day" data-price="500000">Full Day Package - PKR 500,000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="venue-option" data-venue="ajrak-banquet" data-min-guests="100" data-max-guests="200">
+                                    <div class="venue-checkbox">
+                                        <input type="radio" id="venue-ajrak" name="venue" value="ajrak-banquet">
+                                        <label for="venue-ajrak" class="radio-label"></label>
+                                    </div>
+                                    <div class="venue-preview">
+                                        <img src="https://images.pexels.com/photos/1045541/pexels-photo-1045541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ajrak Banquet">
+                                    </div>
+                                    <div class="venue-details">
+                                        <h4>Ajrak Banquet</h4>
+                                        <p class="venue-capacity">100-200 Guests</p>
+                                        <p class="venue-description">Intimate hall with traditional Sindhi Ajrak-inspired patterns and designs.</p>
+                                        <a href="venues.html#ajrak-banquet" class="venue-link" target="_blank">View Details</a>
+                                    </div>
+                                    <div class="venue-packages">
+                                        <select class="package-select" data-venue="ajrak-banquet">
+                                            <option value="">Select Package</option>
+                                            <option value="standard" data-price="200000">Standard Package - PKR 200,000</option>
+                                            <option value="deluxe" data-price="300000">Deluxe Package - PKR 300,000</option>
+                                            <option value="premium" data-price="400000">Premium Package - PKR 400,000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="venue-option" data-venue="ralli-courtyard" data-min-guests="50" data-max-guests="100">
+                                    <div class="venue-checkbox">
+                                        <input type="radio" id="venue-ralli" name="venue" value="ralli-courtyard">
+                                        <label for="venue-ralli" class="radio-label"></label>
+                                    </div>
+                                    <div class="venue-preview">
+                                        <img src="https://images.pexels.com/photos/632520/pexels-photo-632520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ralli Courtyard">
+                                    </div>
+                                    <div class="venue-details">
+                                        <h4>Ralli Courtyard</h4>
+                                        <p class="venue-capacity">50-100 Guests</p>
+                                        <p class="venue-description">Charming courtyard with traditional haveli-style architecture for intimate gatherings.</p>
+                                        <a href="venues.html#ralli-courtyard" class="venue-link" target="_blank">View Details</a>
+                                    </div>
+                                    <div class="venue-packages">
+                                        <select class="package-select" data-venue="ralli-courtyard">
+                                            <option value="">Select Package</option>
+                                            <option value="basic" data-price="150000">Basic Package - PKR 150,000</option>
+                                            <option value="deluxe" data-price="200000">Deluxe Package - PKR 200,000</option>
+                                            <option value="premium" data-price="250000">Premium Package - PKR 250,000</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="venue-unavailable" style="display: none;">
+                                <div class="unavailable-message">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    <h4>No venues available for the selected date and guest count</h4>
+                                    <p>Please try a different date or adjust your guest count to see available options.</p>
+                                </div>
+                                <button type="button" class="btn btn-secondary" id="modify-search">Modify Search</button>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="1">Back</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="3">Continue to Services</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Services & Add-ons -->
+                        <div class="booking-step" id="booking-step-3">
+                            <h3 class="step-title">Additional Services & Add-ons</h3>
+                            <div class="services-grid">
+                                <div class="service-category">
+                                    <h4 class="category-title">Catering Services</h4>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-catering-sindhi" name="services[]" value="catering-sindhi" data-price="85000">
+                                            <label for="service-catering-sindhi">Traditional Sindhi Menu</label>
+                                        </div>
+                                        <div class="service-price">PKR 85,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-catering-multicuisine" name="services[]" value="catering-multicuisine" data-price="100000">
+                                            <label for="service-catering-multicuisine">Multi-Cuisine Menu</label>
+                                        </div>
+                                        <div class="service-price">PKR 100,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-catering-premium" name="services[]" value="catering-premium" data-price="125000">
+                                            <label for="service-catering-premium">Premium Gourmet Menu</label>
+                                        </div>
+                                        <div class="service-price">PKR 125,000</div>
+                                    </div>
+                                </div>
+                                <div class="service-category">
+                                    <h4 class="category-title">Decoration</h4>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-decor-standard" name="services[]" value="decor-standard" data-price="50000">
+                                            <label for="service-decor-standard">Standard Cultural Décor</label>
+                                        </div>
+                                        <div class="service-price">PKR 50,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-decor-premium" name="services[]" value="decor-premium" data-price="95000">
+                                            <label for="service-decor-premium">Premium Floral Décor</label>
+                                        </div>
+                                        <div class="service-price">PKR 95,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-decor-luxury" name="services[]" value="decor-luxury" data-price="150000">
+                                            <label for="service-decor-luxury">Luxury Custom Theme</label>
+                                        </div>
+                                        <div class="service-price">PKR 150,000</div>
+                                    </div>
+                                </div>
+                                <div class="service-category">
+                                    <h4 class="category-title">Entertainment</h4>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-dj" name="services[]" value="dj" data-price="35000">
+                                            <label for="service-dj">DJ & Sound System</label>
+                                        </div>
+                                        <div class="service-price">PKR 35,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-live-music" name="services[]" value="live-music" data-price="60000">
+                                            <label for="service-live-music">Traditional Live Music</label>
+                                        </div>
+                                        <div class="service-price">PKR 60,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-dancers" name="services[]" value="dancers" data-price="45000">
+                                            <label for="service-dancers">Cultural Dance Performance</label>
+                                        </div>
+                                        <div class="service-price">PKR 45,000</div>
+                                    </div>
+                                </div>
+                                <div class="service-category">
+                                    <h4 class="category-title">Photography & Video</h4>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-photo-basic" name="services[]" value="photo-basic" data-price="40000">
+                                            <label for="service-photo-basic">Basic Photography Package</label>
+                                        </div>
+                                        <div class="service-price">PKR 40,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-photo-premium" name="services[]" value="photo-premium" data-price="75000">
+                                            <label for="service-photo-premium">Premium Photo & Video</label>
+                                        </div>
+                                        <div class="service-price">PKR 75,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-drone" name="services[]" value="drone" data-price="25000">
+                                            <label for="service-drone">Aerial Drone Coverage</label>
+                                        </div>
+                                        <div class="service-price">PKR 25,000</div>
+                                    </div>
+                                </div>
+                                <div class="service-category">
+                                    <h4 class="category-title">Transportation</h4>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-bridal-car" name="services[]" value="bridal-car" data-price="30000">
+                                            <label for="service-bridal-car">Luxury Bridal Car</label>
+                                        </div>
+                                        <div class="service-price">PKR 30,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-guest-shuttle" name="services[]" value="guest-shuttle" data-price="45000">
+                                            <label for="service-guest-shuttle">Guest Shuttle Service</label>
+                                        </div>
+                                        <div class="service-price">PKR 45,000</div>
+                                    </div>
+                                </div>
+                                <div class="service-category">
+                                    <h4 class="category-title">AI Planning Services</h4>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-ai-basic" name="services[]" value="ai-basic" data-price="15000">
+                                            <label for="service-ai-basic">Basic AI Planning</label>
+                                        </div>
+                                        <div class="service-price">PKR 15,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-ai-premium" name="services[]" value="ai-premium" data-price="30000">
+                                            <label for="service-ai-premium">Premium AI Coordination</label>
+                                        </div>
+                                        <div class="service-price">PKR 30,000</div>
+                                    </div>
+                                    <div class="service-option">
+                                        <div class="service-checkbox">
+                                            <input type="checkbox" id="service-ai-assistant" name="services[]" value="ai-assistant" data-price="50000">
+                                            <label for="service-ai-assistant">Personal AI Wedding Assistant</label>
+                                        </div>
+                                        <div class="service-price">PKR 50,000</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-notes">
+                                <label for="service-special-requests">Special Requests or Custom Services</label>
+                                <textarea id="service-special-requests" name="service-special-requests" rows="3" placeholder="Tell us about any custom services or special requests..."></textarea>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="2">Back</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="4">Continue to Personal Details</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Personal Details -->
+                        <div class="booking-step" id="booking-step-4">
+                            <h3 class="step-title">Personal Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">First Name <span class="required">*</span></label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name <span class="required">*</span></label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City <span class="required">*</span></label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="postal-code">Postal Code</label>
+                                    <input type="text" id="postal-code" name="postal-code">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Partner's Information (Optional)</label>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="partner-first-name" name="partner-first-name" placeholder="Partner's First Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="partner-last-name" name="partner-last-name" placeholder="Partner's Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="email" id="partner-email" name="partner-email" placeholder="Partner's Email Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" id="partner-phone" name="partner-phone" placeholder="Partner's Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="hear-about">How did you hear about us?</label>
+                                <select id="hear-about" name="hear-about">
+                                    <option value="">Select an option</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="friend">Friend or Family</option>
+                                    <option value="event">Wedding Event/Expo</option>
+                                    <option value="magazine">Wedding Magazine</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group terms-privacy">
+                                <div class="checkbox-wrapper">
+                                    <input type="checkbox" id="terms-agree" name="terms-agree" required>
+                                    <label for="terms-agree">I agree to the <a href="terms.html" target="_blank">Terms & Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> <span class="required">*</span></label>
+                                </div>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="3">Back</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="5">Review & Confirm</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: Confirmation -->
+                        <div class="booking-step" id="booking-step-5">
+                            <h3 class="step-title">Review & Confirm Your Booking</h3>
+                            <div class="confirmation-message">
+                                <i class="fas fa-clipboard-check"></i>
+                                <h4>Almost Done!</h4>
+                                <p>Please review your booking details in the summary. Once confirmed, a 30% deposit will be required to secure your date.</p>
+                            </div>
+                            <div class="payment-options">
+                                <h4>Payment Method</h4>
+                                <div class="payment-methods">
+                                    <div class="payment-method">
+                                        <input type="radio" id="payment-bank" name="payment-method" value="bank" checked>
+                                        <label for="payment-bank">Bank Transfer</label>
+                                    </div>
+                                    <div class="payment-method">
+                                        <input type="radio" id="payment-credit" name="payment-method" value="credit">
+                                        <label for="payment-credit">Credit/Debit Card</label>
+                                    </div>
+                                    <div class="payment-method">
+                                        <input type="radio" id="payment-cash" name="payment-method" value="cash">
+                                        <label for="payment-cash">Cash Payment</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deposit-info">
+                                <h4>Deposit Information</h4>
+                                <p>To secure your booking, a 30% deposit is required. The remaining balance is due one month prior to your event date.</p>
+                                <div class="deposit-amount">
+                                    <span>Deposit Amount (30%):</span>
+                                    <span id="deposit-amount">PKR 0</span>
+                                </div>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="4">Back</button>
+                                <button type="submit" class="btn btn-primary" id="confirm-booking">Confirm Booking</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Success Modal -->
+    <div class="modal" id="booking-success-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="success-content">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Booking Successful!</h2>
+                <p>Thank you for choosing Sindh Shaadi Palace for your special day. Your booking request has been received successfully.</p>
+                <p>A confirmation email has been sent to your email address with all the details. One of our event coordinators will contact you within 24 hours to discuss the next steps.</p>
+                <div class="booking-reference">
+                    <span>Booking Reference:</span>
+                    <span id="booking-reference">SSP-2025-</span>
+                </div>
+                <div class="success-buttons">
+                    <a href="index.html" class="btn btn-outline">Return to Home</a>
+                    <button class="btn btn-primary" id="download-confirmation">Download Confirmation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant" id="ai-assistant">
+        <button class="ai-toggle" id="ai-toggle">
+            <i class="fas fa-robot"></i>
+            <span>AI Assistant</span>
+        </button>
+        <div class="ai-chat-container" id="ai-chat-container">
+            <div class="ai-chat-header">
+                <h3>Wedding Planner AI</h3>
+                <button class="ai-close" id="ai-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="ai-chat-messages" id="ai-chat-messages">
+                <div class="ai-message">
+                    <div class="ai-message-content">
+                        <p>Hello! I'm your wedding planning assistant. I can help you with booking the perfect venue and planning your event. Feel free to ask me any questions about our venues, services, or the booking process.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-chat-input">
+                <input type="text" id="ai-input" placeholder="Ask me anything about booking...">
+                <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-text">Sindh Shaadi</span>
+                        <span class="logo-accent">Palace</span>
+                    </div>
+                    <p class="footer-description">Creating magical wedding experiences with a perfect blend of Sindhi culture and modern luxury.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="venues.html">Venues</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#catering">Catering</a></li>
+                        <li><a href="services.html#decoration">Decoration</a></li>
+                        <li><a href="services.html#photography">Photography</a></li>
+                        <li><a href="services.html#entertainment">Entertainment</a></li>
+                        <li><a href="services.html#planning">AI Planning</a></li>
+                        <li><a href="services.html#transportation">Transportation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Cultural Road, Hyderabad, Sindh, Pakistan</li>
+                        <li><i class="fas fa-phone"></i> +92 22 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@sindhshaadi.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Sun: 9:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Sindh Shaadi Palace. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="admin/login.html">Admin Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/ai-assistant.js"></script>
+</body>
+</html>

@@ -1,0 +1,383 @@
+/* 
+* Sindh Shaadi Palace - Venues Page Styles
+* Pakistani Wedding Hall Booking System
+*/
+
+/* Venues Intro */
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-8);
+    text-align: center;
+}
+
+.venue-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-8);
+}
+
+.filter-btn {
+    background-color: var(--white);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-2) var(--spacing-4);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+/* Venues Listing */
+.venue-item {
+    margin-bottom: var(--spacing-16);
+}
+
+.venue-item:last-child {
+    margin-bottom: 0;
+}
+
+.venue-details {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--box-shadow-lg);
+}
+
+.venue-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing-4);
+    padding: var(--spacing-4);
+}
+
+.venue-image-main {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    height: 440px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.venue-image-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.venue-image-grid {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: var(--spacing-4);
+}
+
+.venue-image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.venue-info {
+    padding: var(--spacing-8);
+}
+
+.venue-title {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-4);
+}
+
+.venue-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-6);
+}
+
+.venue-meta span {
+    display: flex;
+    align-items: center;
+    color: var(--gray-700);
+}
+
+.venue-meta i {
+    color: var(--primary);
+    margin-right: var(--spacing-2);
+}
+
+.venue-description {
+    margin-bottom: var(--spacing-6);
+}
+
+.venue-features h3,
+.venue-pricing h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-4);
+    color: var(--gray-800);
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-3);
+    margin-bottom: var(--spacing-8);
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+}
+
+.features-list i {
+    color: var(--primary);
+    margin-right: var(--spacing-2);
+}
+
+.pricing-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+}
+
+.price-card {
+    background-color: var(--gray-50);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-6);
+    transition: var(--transition);
+}
+
+.price-card.featured {
+    background-color: var(--primary-light);
+    color: var(--white);
+    transform: scale(1.05);
+    position: relative;
+    z-index: 2;
+    box-shadow: var(--box-shadow-md);
+}
+
+.price-card.featured h4 {
+    color: var(--white);
+}
+
+.price-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-4);
+    text-align: center;
+}
+
+.price-card .price {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: var(--spacing-4);
+    font-family: var(--font-heading);
+}
+
+.price-card.featured .price {
+    color: var(--white);
+}
+
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-card li {
+    margin-bottom: var(--spacing-2);
+    font-size: 0.9rem;
+    padding-left: var(--spacing-4);
+    position: relative;
+}
+
+.price-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+.price-card.featured li::before {
+    color: var(--white);
+}
+
+.venue-cta {
+    display: flex;
+    gap: var(--spacing-4);
+}
+
+@media (max-width: 992px) {
+    .venue-images {
+        grid-template-columns: 1fr;
+    }
+    
+    .venue-image-main {
+        grid-column: 1;
+        grid-row: 1;
+        height: 300px;
+    }
+    
+    .venue-image-grid {
+        grid-column: 1;
+        grid-row: 2;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+    
+    .features-list,
+    .pricing-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .venue-image-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .venue-cta {
+        flex-direction: column;
+    }
+}
+
+/* Venues CTA Section */
+.venues-cta {
+    position: relative;
+    text-align: center;
+    padding: var(--spacing-16) 0;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-4);
+}
+
+.cta-content p {
+    color: var(--gray-200);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-8);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-4);
+}
+
+@media (max-width: 768px) {
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-3);
+    }
+}
+
+/* FAQ Section */
+.faq-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: var(--spacing-4);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-4) var(--spacing-6);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.faq-toggle {
+    font-size: 1.1rem;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.faq-answer {
+    padding: 0 var(--spacing-6);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: var(--spacing-4) var(--spacing-6);
+    max-height: 500px;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+/* Virtual Tour Modal */
+.virtual-tour-container {
+    height: 500px;
+    background-color: var(--gray-100);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tour-loading {
+    text-align: center;
+}
+
+.tour-loading i {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: var(--spacing-2);
+}
+
+.tour-content {
+    width: 100%;
+    height: 100%;
+}
+
+.tour-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
